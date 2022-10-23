@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width:0px){
+    /* mobile */
+    .con{
+        width: 90vw;
+    }
+}
+@media only screen and (min-width:800px)
+{
+    .con{
+        width: 70vw;
+    }
+}
+
+
+.maincon{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con{
+    height: 70vh;
+    background-color: #2c0080;
+    position: relative;
+}
+
+.iconimg
+{
+color: rgba(201, 201, 201, 0.671);
+font-size: 2rem;
+position: absolute;
+animation-name:rotation;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-delay: 0ms;
+cursor: pointer;
+border: 1px solid red;
+padding: 1.5rem;
+border-radius:2.5rem ;
+}
+    @keyframes rotation {
+        0%{
+            top: var(--start-position-top);
+            left: var(--start-position-left);
+            transform: rotate3d(0,0,1,0deg);
+        }
+        50%{
+            top: var(--middle-position-top);
+            left: var(--middle-position-left);
+            transform: rotate3d(0,0,1,360deg);
+        }
+        100%{
+            top: var(--end-position-top);
+            left: var(--end-position-left);
+            transform: rotate3d(0,0,1,720deg);
+        }
+    }
+
+    .iconimg2
+{
+color: rgba(201, 201, 201, 0.671);
+font-size: 2rem;
+position: absolute;
+animation-name:rotation;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-delay: 0ms;
+cursor: pointer;
+border: 1px solid red;
+padding: 1.5rem;
+border-radius:2.5rem ;
+}
+
+.iconimg3
+{
+color: rgba(201, 201, 201, 0.671);
+font-size: 2rem;
+position: absolute;
+animation-name:rotation;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-delay: 0ms;
+cursor: pointer;
+border: 1px solid red;
+padding: 1.5rem;
+border-radius:2.5rem ;
+}
+
+.iconimg:hover{
+}
